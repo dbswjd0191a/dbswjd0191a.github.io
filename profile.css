@@ -10,33 +10,18 @@ body, h1, h2, h3, p, ul { margin: 0; }
 main {
   width: min(48rem, calc(100% - 3rem));
   margin-inline: auto;
-  padding-block: clamp(3rem, 8vw, 7rem);
+  padding-block: clamp(2rem, 5vw, 4.5rem);
 }
 
-.profile {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: clamp(1.5rem, 5vw, 3rem);
-}
-.portrait {
-  width: clamp(7rem, 19vw, 10rem);
-  aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: #edf1f5;
-  color: #54677b;
-  font-family: "Nanum Myeongjo", "Batang", serif;
-  font-size: clamp(2.5rem, 6vw, 3.75rem);
-}
 h1 {
-  font-size: clamp(2.25rem, 6vw, 3.4rem);
-  line-height: 1.15;
+  color: #151515;
+  font-size: clamp(4rem, 9vw, 7rem);
+  font-weight: 800;
+  line-height: 1.1;
   letter-spacing: -.055em;
 }
 .english-name {
-  margin-top: .5rem;
+  margin-top: 1.25rem;
   color: #485466;
   font-size: 1rem;
   letter-spacing: .14em;
@@ -103,8 +88,6 @@ meter::-webkit-meter-optimum-value { background: #536b83; border-radius: 1rem; }
 meter::-moz-meter-bar { background: #536b83; border-radius: 1rem; }
 
 @media (max-width: 32rem) {
-  .profile { grid-template-columns: 1fr; gap: 1.4rem; }
-  .portrait { width: 6rem; }
   .education-entry { flex-direction: column; }
   .skills { grid-template-columns: 1fr; }
 }
