@@ -26,18 +26,7 @@ h1 {
   font-size: 1rem;
   letter-spacing: .14em;
 }
-.birth { margin-top: 1.15rem; color: #485466; }
-.degrees {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem 1.35rem;
-  padding: 0;
-  margin-top: .4rem;
-  list-style: none;
-  line-height: 1.6;
-}
-.degrees li { font-weight: 600; }
-.degrees span { color: #596271; font-weight: 400; }
+.birth { margin-top: .5rem; color: #485466; }
 
 section { margin-top: clamp(2.75rem, 7vw, 5rem); }
 h2 {
