@@ -72,8 +72,39 @@ h2 {
 h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break: keep-all; }
 .period { color: #515c6c; font-variant-numeric: tabular-nums; }
 
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.125rem clamp(2rem, 7vw, 5rem);
+  margin-top: 1.4rem;
+  padding: 0;
+  list-style: none;
+}
+.skills li {
+  display: grid;
+  grid-template-columns: 4.25rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+.skills label { font-weight: 600; }
+meter {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: .5rem;
+  overflow: hidden;
+  border: 0;
+  border-radius: 1rem;
+  background: #e3e8ec;
+}
+meter::-webkit-meter-inner-element { display: block; }
+meter::-webkit-meter-bar { height: 100%; border: 0; background: #e3e8ec; box-shadow: none; }
+meter::-webkit-meter-optimum-value { background: #536b83; border-radius: 1rem; }
+meter::-moz-meter-bar { background: #536b83; border-radius: 1rem; }
+
 @media (max-width: 32rem) {
   .profile { grid-template-columns: 1fr; gap: 1.4rem; }
   .portrait { width: 6rem; }
   .education-entry { flex-direction: column; }
+  .skills { grid-template-columns: 1fr; }
 }
