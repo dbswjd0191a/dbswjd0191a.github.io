@@ -141,8 +141,12 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
 .project-award {
   flex: none;
   max-width: 45%;
+  padding: .25rem .625rem;
+  border-radius: .375rem;
+  background: #fff1ce;
   font-size: .875rem;
-  color: #715932;
+  font-weight: 600;
+  color: #000;
   text-align: right;
   word-break: keep-all;
 }
@@ -168,14 +172,8 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
 .project-info dl { margin: 0; }
 .project-info dt { margin-top: .75rem; font-size: .875rem; font-weight: 650; }
 .project-info dd { margin: .125rem 0 0; color: #515c6c; }
-.tech-stack { display: flex; flex-wrap: wrap; gap: .375rem; }
-.tech-tag {
-  display: inline-block;
-  padding: .125rem .5rem;
-  border-radius: .25rem;
-  background: #edf1f5;
-  font-size: .875rem;
-}
+.tech-stack { display: flex; align-items: center; flex-wrap: wrap; gap: .625rem; padding-top: .25rem; }
+.tech-stack img { display: block; object-fit: contain; }
 .project-details summary {
   color: #364454;
   cursor: pointer;
