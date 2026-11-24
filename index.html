@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="only light">
   <title>윤정 · 포트폴리오</title>
-  <link rel="stylesheet" href="./profile.css?v=15">
+  <link rel="stylesheet" href="./profile.css?v=16">
 </head>
 <body>
   <main>
@@ -111,6 +111,128 @@
         <details class="project-details">
           <summary><span class="details-closed">자세히 보기</span><span class="details-open">접기</span></summary>
           <p>HTP 검사 그림에 맞게 파인튜닝한 YOLOv8으로 그림 속 객체를 인식하고, OpenCV로 객체별 특징을 비교했습니다. 이어 RAG를 활용해 그림에서 추출한 특징과 내담자의 응답을 종합적으로 검토한 뒤 검사 소견을 생성하도록 구현했습니다.</p>
+        </details>
+      </article>
+      <article class="project-entry" id="soomgil">
+        <header class="project-heading">
+          <h3><img src="./assets/projects/soomgil/icon.webp" alt="" width="28" height="28">숨길</h3>
+          <span class="project-award samsung-award"><img src="./assets/projects/samsung.png" alt="삼성전자" width="56" height="15">프로젝트 우수상</span>
+        </header>
+        <div class="project-overview">
+          <div class="project-preview">
+            <img src="./assets/projects/soomgil/route.webp" alt="제주도 여행 장소와 손으로 그린 경로를 표시한 숨길 공동 일정 지도" loading="lazy">
+          </div>
+          <div class="project-info">
+            <p>함께 여행할 사람들이 장소 카드를 넘기며 가고 싶은 곳을 고르면, 일행의 취향을 모아 여행지를 추천합니다. 추천받은 장소로 지도 위에서 여행 일정을 함께 짤 수 있습니다.</p>
+            <dl>
+              <dt>역할</dt><dd>가입 시 장소 취향 수집·지도 사용 안내 개발, 한국관광공사 장소 데이터 연동</dd>
+              <dt>기술 스택</dt>
+              <dd class="tech-stack" lang="en">
+                <span><img src="./assets/skills/vuejs.svg" alt="" width="26" height="26">Vue 3</span>
+                <span><img src="./assets/skills/typescript.svg" alt="" width="26" height="26">TypeScript</span>
+                <span><img src="./assets/skills/java.svg" alt="" width="26" height="26">Java</span>
+                <span><img src="./assets/skills/spring.svg" alt="" width="26" height="26">Spring Boot</span>
+                <span><img src="./assets/skills/postgresql.svg" alt="" width="26" height="26">PostgreSQL</span>
+                <span><img src="./assets/skills/redis.svg" alt="" width="26" height="26">Redis</span>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <details class="project-details">
+          <summary><span class="details-closed">자세히 보기</span><span class="details-open">접기</span></summary>
+          <p>일행은 각자 장소를 선택한 뒤 추천 결과를 함께 봅니다. 마음에 드는 장소를 일정에 추가하고 이동 경로를 확인하며, 여행 메모와 준비물 목록도 함께 편집할 수 있습니다.</p>
+          <p><a href="https://github.com/Soomgil/soomgil#readme">GitHub에서 숨길 보기</a></p>
+        </details>
+      </article>
+      <article class="project-entry" id="iread">
+        <header class="project-heading">
+          <h3><img src="./assets/projects/iread/icon.webp" alt="" width="28" height="28">아이리드</h3>
+        </header>
+        <div class="project-overview">
+          <div class="project-preview">
+            <img src="./assets/projects/iread/preview.webp" alt="그림을 보고 알맞은 문장을 고르는 아이리드 읽기 훈련 화면" loading="lazy">
+          </div>
+          <div class="project-info">
+            <p>읽기에 어려움을 겪는 아동을 위한 읽기 훈련 서비스입니다. 아동이 글을 읽을 때의 시선과 발음을 분석해 맞춤형 활동을 제공하고, 교사가 학습 변화를 확인할 수 있도록 했습니다.</p>
+            <dl>
+              <dt>역할</dt><dd>프로젝트 매니저(PM), 커리큘럼·읽기 훈련 백엔드 개발</dd>
+              <dt>기술 스택</dt>
+              <dd class="tech-stack" lang="en">
+                <span><img src="./assets/skills/java.svg" alt="" width="26" height="26">Java</span>
+                <span><img src="./assets/skills/spring.svg" alt="" width="26" height="26">Spring Boot</span>
+                <span><img src="./assets/skills/vuejs.svg" alt="" width="26" height="26">Vue.js</span>
+                <span><img src="./assets/skills/electron.svg" alt="" width="26" height="26">Electron</span>
+                <span><img src="./assets/skills/python.svg" alt="" width="26" height="26">Python</span>
+                <span><img src="./assets/skills/fastapi.svg" alt="" width="26" height="26">FastAPI</span>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <details class="project-details">
+          <summary><span class="details-closed">자세히 보기</span><span class="details-open">접기</span></summary>
+          <p>읽기 훈련에서 어떤 문항을 제시할지 기준을 설계하고 교안 자동 생성 기능을 연동했습니다. 아동이 소리 내어 읽은 결과를 훈련에 반영할 수 있도록 발음 평가 API의 안정성도 개선했습니다.</p>
+          <p><a href="https://github.com/iRead-B105/iRead#readme">GitHub에서 아이리드 보기</a></p>
+        </details>
+      </article>
+      <article class="project-entry" id="dib">
+        <header class="project-heading">
+          <h3><img src="./assets/projects/dib/logo.png" alt="" width="28" height="28">dib</h3>
+        </header>
+        <div class="project-overview">
+          <div class="project-preview">
+            <img src="./assets/projects/dib/preview.webp" alt="dib 앱의 경매 홈과 상품별 현재가·입찰 화면" loading="lazy">
+          </div>
+          <div class="project-info">
+            <p>일반 경매와 실시간 방송으로 중고 물건을 사고파는 앱입니다. 구매자는 방송에서 상품을 확인하며 입찰하고, 낙찰 후 결제와 배송까지 한곳에서 진행할 수 있습니다.</p>
+            <dl>
+              <dt>역할</dt><dd>팀장, 실시간 입찰·라이브 경매 백엔드 개발</dd>
+              <dt>기술 스택</dt>
+              <dd class="tech-stack" lang="en">
+                <span><img src="./assets/skills/kotlin.svg" alt="" width="26" height="26">Kotlin</span>
+                <span><img src="./assets/skills/java.svg" alt="" width="26" height="26">Java</span>
+                <span><img src="./assets/skills/spring.svg" alt="" width="26" height="26">Spring Boot</span>
+                <span><img src="./assets/skills/postgresql.svg" alt="" width="26" height="26">PostgreSQL</span>
+                <span><img src="./assets/skills/redis.svg" alt="" width="26" height="26">Redis</span>
+                <span><img src="./assets/skills/apachekafka.svg" alt="" width="26" height="26">Kafka</span>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <details class="project-details">
+          <summary><span class="details-closed">자세히 보기</span><span class="details-open">접기</span></summary>
+          <p>여러 사람이 동시에 입찰해도 현재가가 일관되도록 Redis 분산 락과 PostgreSQL 트랜잭션을 사용하고, 가격 변동을 WebSocket으로 전달합니다. AI는 등록된 상품과 입찰 기록을 검토해 제한 품목과 이상 입찰을 찾아냅니다.</p>
+          <p><a href="https://github.com/dib-B101/dib#readme">GitHub에서 dib 보기</a></p>
+        </details>
+      </article>
+      <article class="project-entry" id="baro">
+        <header class="project-heading">
+          <h3><img src="./assets/projects/baro/icon.webp" alt="" width="28" height="28">바로영업</h3>
+          <span class="project-award samsung-award"><img src="./assets/projects/samsung.png" alt="삼성전자" width="56" height="15">프로젝트 우수상</span>
+        </header>
+        <div class="project-overview">
+          <div class="project-preview">
+            <img src="./assets/projects/baro/preview.webp" alt="바로영업 웹의 상담 문자 작성 화면과 모바일 앱의 약속 달력" loading="lazy">
+          </div>
+          <div class="project-info">
+            <p>보험설계사를 위한 고객 관리 서비스입니다. 전화가 오면 지난 상담 기록을 확인하고, 통화가 끝나면 상담 요점과 다음 연락 일정을 정리할 수 있습니다.</p>
+            <dl>
+              <dt>역할</dt><dd>고객 관리 웹 개발, 앱·웹 문자 연동 및 자동 발송 구현</dd>
+              <dt>기술 스택</dt>
+              <dd class="tech-stack" lang="en">
+                <span><img src="./assets/skills/kotlin.svg" alt="" width="26" height="26">Kotlin</span>
+                <span><img src="./assets/skills/jetpackcompose.svg" alt="" width="26" height="26">Jetpack Compose</span>
+                <span><img src="./assets/skills/react.svg" alt="" width="26" height="26">React</span>
+                <span><img src="./assets/skills/typescript.svg" alt="" width="26" height="26">TypeScript</span>
+                <span><img src="./assets/skills/spring.svg" alt="" width="26" height="26">Spring Boot</span>
+                <span><img src="./assets/skills/postgresql.svg" alt="" width="26" height="26">PostgreSQL</span>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <details class="project-details">
+          <summary><span class="details-closed">자세히 보기</span><span class="details-open">접기</span></summary>
+          <p>현장에서 남긴 상담 기록을 사무실에서도 이어 볼 수 있도록 앱과 웹을 연결했습니다. 고객별 문자와 발송 규칙을 웹에서 관리하고 후속 상담 일정을 확인할 수 있습니다.</p>
+          <p><a href="https://salesbaro.com/products/">바로영업 제품 소개 보기</a></p>
         </details>
       </article>
     </section>
