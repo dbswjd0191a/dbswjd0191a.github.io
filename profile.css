@@ -61,8 +61,6 @@ h2 {
   padding-top: 1.25rem;
 }
 h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break: keep-all; }
-.education-entry h3 { display: flex; align-items: center; gap: .75rem; }
-.academy-logo { width: 3.5rem; height: auto; flex: none; }
 .period { color: #515c6c; font-variant-numeric: tabular-nums; }
 
 .skills {
@@ -106,11 +104,10 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
 
 @media (max-width: 32rem) {
   .education-entry { align-items: flex-start; flex-direction: column; }
-  .period { margin-inline-start: 4.25rem; }
 }
 @media (max-width: 24rem) {
   .skills {
-    grid-template-columns: repeat(5, minmax(0, 1fr)) 3.5rem;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) max-content;
     gap: .125rem;
     margin-inline: -.75rem;
   }
