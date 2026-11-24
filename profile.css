@@ -20,30 +20,24 @@ h1 {
   line-height: 1.1;
   letter-spacing: -.055em;
 }
-.english-name {
-  margin-top: 1.25rem;
-  color: #485466;
-  font-size: 1rem;
-  letter-spacing: .14em;
-}
-.birth { margin-top: .5rem; color: #485466; }
+.birth { margin-top: 1rem; }
 .contact {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .25rem 1.5rem;
-  margin-top: .75rem;
+  display: grid;
+  justify-items: start;
+  gap: .25rem;
+  margin-top: .25rem;
   font-style: normal;
 }
-.contact a {
-  display: inline-flex;
+.birth, .contact a {
+  display: flex;
   align-items: center;
   gap: .55rem;
   padding-block: .3rem;
   color: #364454;
-  text-decoration: none;
 }
+.contact a { text-decoration: none; }
 .contact a:hover, .contact a:focus-visible { text-decoration: underline; text-underline-offset: .2em; }
-.contact img { opacity: .74; }
+.birth img, .contact img { flex: none; opacity: .74; }
 
 section { margin-top: clamp(2.75rem, 7vw, 5rem); }
 h2 {
