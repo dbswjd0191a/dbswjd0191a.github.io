@@ -123,6 +123,70 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
 }
 .rank { font-size: .8125rem; font-weight: 600; color: #286856; white-space: nowrap; }
 
+.project-card {
+  margin-top: 1.25rem;
+  padding: clamp(.875rem, 3vw, 1.5rem);
+  border: 1px solid #d9dee3;
+  border-radius: .625rem;
+  overflow-wrap: anywhere;
+}
+.project-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .75rem;
+}
+.project-heading h3 { display: flex; align-items: center; gap: .55rem; }
+.project-heading img { flex: none; }
+.project-award {
+  flex: none;
+  max-width: 45%;
+  font-size: .875rem;
+  color: #715932;
+  text-align: right;
+}
+.project-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: start;
+  gap: clamp(.75rem, 3vw, 1.5rem);
+  margin-block: 1.25rem;
+}
+.project-preview {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f8f9fa;
+  border: 1px solid #d9dee3;
+  border-radius: .25rem;
+}
+.project-preview > img { width: 100%; height: 100%; object-fit: cover; }
+.project-preview > .preview-placeholder { width: 24px; height: 24px; opacity: .35; }
+.project-info { line-height: 1.5; }
+.project-info dl { margin: 0; }
+.project-info dt { margin-top: .75rem; font-size: .875rem; font-weight: 650; }
+.project-info dd { margin: .125rem 0 0; color: #515c6c; }
+.tech-tag {
+  display: inline-block;
+  padding: .125rem .5rem;
+  border-radius: .25rem;
+  background: #edf1f5;
+  font-size: .875rem;
+}
+.project-details { border-top: 1px solid #d9dee3; }
+.project-details summary {
+  padding-top: .875rem;
+  color: #364454;
+  cursor: pointer;
+  font-size: .9375rem;
+  font-weight: 600;
+}
+.project-details summary:focus-visible { outline: 2px solid #506980; outline-offset: 3px; }
+.project-details p { margin-top: .75rem; color: #515c6c; line-height: 1.6; }
+.details-open, .project-details[open] .details-closed { display: none; }
+.project-details[open] .details-open { display: inline; }
+
 @media (max-width: 32rem) {
   .education-entry { align-items: flex-start; flex-direction: column; }
 }
