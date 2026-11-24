@@ -123,12 +123,14 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
 }
 .rank { font-size: .8125rem; font-weight: 600; color: #286856; white-space: nowrap; }
 
-.project-card {
-  margin-top: 1.25rem;
-  padding: clamp(.875rem, 3vw, 1.5rem);
-  border: 1px solid #d9dee3;
-  border-radius: .625rem;
+#projects { border-bottom: 2px solid #596573; }
+.project-entry {
+  padding-top: 1.25rem;
   overflow-wrap: anywhere;
+}
+.project-entry + .project-entry {
+  margin-top: 1.5rem;
+  border-top: 1px solid #aeb7c0;
 }
 .project-heading {
   display: flex;
@@ -174,7 +176,7 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
   background: #edf1f5;
   font-size: .875rem;
 }
-.project-details { border-top: 1px solid #d9dee3; }
+.project-details { border-top: 1px solid #e1e5e9; }
 .project-details summary {
   padding-top: .875rem;
   color: #364454;
