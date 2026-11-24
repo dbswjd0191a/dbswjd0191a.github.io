@@ -173,6 +173,14 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
 .project-info dt { margin-top: .75rem; font-size: .875rem; font-weight: 650; }
 .project-info dd { margin: .125rem 0 0; color: #515c6c; }
 .tech-stack { display: flex; align-items: center; flex-wrap: wrap; gap: .625rem; padding-top: .25rem; }
+.tech-stack > span {
+  display: grid;
+  justify-items: center;
+  gap: .25rem;
+  min-width: 3.25rem;
+  font-size: .875rem;
+  white-space: nowrap;
+}
 .tech-stack img { display: block; object-fit: contain; }
 .project-details summary {
   color: #364454;
