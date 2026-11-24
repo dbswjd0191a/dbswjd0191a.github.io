@@ -20,9 +20,25 @@ h1 {
   line-height: 1.1;
   letter-spacing: -.055em;
 }
-.birth { margin-top: 1rem; }
+.about-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(3.5rem, calc(28vw - 2.25rem), 7.5rem);
+  align-items: start;
+  gap: clamp(.5rem, 2vw, 1.5rem);
+  margin-top: 1rem;
+}
+.photo-frame {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 3 / 4;
+  border: 1px solid #d9dee3;
+  border-radius: 4px;
+  background: #f8f9fa;
+}
+.photo-frame img { opacity: .35; }
 .contact {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   justify-items: start;
   gap: .25rem;
   margin-top: .25rem;
@@ -35,7 +51,7 @@ h1 {
   padding-block: .3rem;
   color: #364454;
 }
-.contact a { text-decoration: none; }
+.contact a { max-width: 100%; overflow-wrap: anywhere; text-decoration: none; }
 .contact a:hover, .contact a:focus-visible { text-decoration: underline; text-underline-offset: .2em; }
 .birth img, .contact img { flex: none; opacity: .74; }
 
