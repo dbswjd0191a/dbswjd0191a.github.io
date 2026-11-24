@@ -125,11 +125,9 @@
           <div class="project-info">
             <p>함께 여행할 사람들이 장소 카드를 넘기며 가고 싶은 곳을 고르면, 일행의 취향을 모아 여행지를 추천합니다. 추천받은 장소로 지도 위에서 여행 일정을 함께 짤 수 있습니다.</p>
             <dl>
-              <dt>역할</dt><dd>가입 시 장소 취향 수집·지도 사용 안내 개발, 한국관광공사 장소 데이터 연동</dd>
+              <dt>역할</dt><dd>취향 설문에 한국관광공사 관광지 데이터 연동, 장소 카드 조회 속도 개선</dd>
               <dt>기술 스택</dt>
               <dd class="tech-stack" lang="en">
-                <span><img src="./assets/skills/vuejs.svg" alt="" width="26" height="26">Vue 3</span>
-                <span><img src="./assets/skills/typescript.svg" alt="" width="26" height="26">TypeScript</span>
                 <span><img src="./assets/skills/java.svg" alt="" width="26" height="26">Java</span>
                 <span><img src="./assets/skills/spring.svg" alt="" width="26" height="26">Spring Boot</span>
                 <span><img src="./assets/skills/postgresql.svg" alt="" width="26" height="26">PostgreSQL</span>
@@ -142,6 +140,34 @@
           <summary><span class="details-closed">자세히 보기</span><span class="details-open">접기</span></summary>
           <p>일행은 각자 장소를 선택한 뒤 추천 결과를 함께 봅니다. 마음에 드는 장소를 일정에 추가하고 이동 경로를 확인하며, 여행 메모와 준비물 목록도 함께 편집할 수 있습니다.</p>
           <p><a href="https://github.com/Soomgil/soomgil#readme">GitHub에서 숨길 보기</a></p>
+        </details>
+      </article>
+      <article class="project-entry" id="baro">
+        <header class="project-heading">
+          <h3><img src="./assets/projects/baro/icon.webp" alt="" width="28" height="28">바로영업</h3>
+          <span class="project-award samsung-award"><img src="./assets/projects/samsung.png" alt="삼성전자" width="56" height="15">프로젝트 우수상</span>
+        </header>
+        <div class="project-overview">
+          <div class="project-preview">
+            <img src="./assets/projects/baro/preview.webp" alt="바로영업 웹의 상담 문자 작성 화면과 모바일 앱의 약속 달력" loading="lazy">
+          </div>
+          <div class="project-info">
+            <p>보험설계사를 위한 고객 관리 서비스입니다. 전화가 오면 지난 상담 기록을 확인하고, 통화가 끝나면 상담 요점과 다음 연락 일정을 정리할 수 있습니다.</p>
+            <dl>
+              <dt>역할</dt><dd>문자 자동 발송 규칙 API와 발송 스케줄러 개발</dd>
+              <dt>기술 스택</dt>
+              <dd class="tech-stack" lang="en">
+                <span><img src="./assets/skills/java.svg" alt="" width="26" height="26">Java</span>
+                <span><img src="./assets/skills/spring.svg" alt="" width="26" height="26">Spring Boot</span>
+                <span><img src="./assets/skills/postgresql.svg" alt="" width="26" height="26">PostgreSQL</span>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <details class="project-details">
+          <summary><span class="details-closed">자세히 보기</span><span class="details-open">접기</span></summary>
+          <p>현장에서 남긴 상담 기록을 사무실에서도 이어 볼 수 있도록 앱과 웹을 연결했습니다. 고객별 문자와 발송 규칙을 웹에서 관리하고 후속 상담 일정을 확인할 수 있습니다.</p>
+          <p><a href="https://salesbaro.com/products/">바로영업 제품 소개 보기</a></p>
         </details>
       </article>
       <article class="project-entry" id="iread">
@@ -160,8 +186,6 @@
               <dd class="tech-stack" lang="en">
                 <span><img src="./assets/skills/java.svg" alt="" width="26" height="26">Java</span>
                 <span><img src="./assets/skills/spring.svg" alt="" width="26" height="26">Spring Boot</span>
-                <span><img src="./assets/skills/vuejs.svg" alt="" width="26" height="26">Vue.js</span>
-                <span><img src="./assets/skills/electron.svg" alt="" width="26" height="26">Electron</span>
                 <span><img src="./assets/skills/python.svg" alt="" width="26" height="26">Python</span>
                 <span><img src="./assets/skills/fastapi.svg" alt="" width="26" height="26">FastAPI</span>
               </dd>
@@ -188,7 +212,6 @@
               <dt>역할</dt><dd>팀장, 실시간 입찰·라이브 경매 백엔드 개발</dd>
               <dt>기술 스택</dt>
               <dd class="tech-stack" lang="en">
-                <span><img src="./assets/skills/kotlin.svg" alt="" width="26" height="26">Kotlin</span>
                 <span><img src="./assets/skills/java.svg" alt="" width="26" height="26">Java</span>
                 <span><img src="./assets/skills/spring.svg" alt="" width="26" height="26">Spring Boot</span>
                 <span><img src="./assets/skills/postgresql.svg" alt="" width="26" height="26">PostgreSQL</span>
@@ -202,37 +225,6 @@
           <summary><span class="details-closed">자세히 보기</span><span class="details-open">접기</span></summary>
           <p>여러 사람이 동시에 입찰해도 현재가가 일관되도록 Redis 분산 락과 PostgreSQL 트랜잭션을 사용하고, 가격 변동을 WebSocket으로 전달합니다. AI는 등록된 상품과 입찰 기록을 검토해 제한 품목과 이상 입찰을 찾아냅니다.</p>
           <p><a href="https://github.com/dib-B101/dib#readme">GitHub에서 dib 보기</a></p>
-        </details>
-      </article>
-      <article class="project-entry" id="baro">
-        <header class="project-heading">
-          <h3><img src="./assets/projects/baro/icon.webp" alt="" width="28" height="28">바로영업</h3>
-          <span class="project-award samsung-award"><img src="./assets/projects/samsung.png" alt="삼성전자" width="56" height="15">프로젝트 우수상</span>
-        </header>
-        <div class="project-overview">
-          <div class="project-preview">
-            <img src="./assets/projects/baro/preview.webp" alt="바로영업 웹의 상담 문자 작성 화면과 모바일 앱의 약속 달력" loading="lazy">
-          </div>
-          <div class="project-info">
-            <p>보험설계사를 위한 고객 관리 서비스입니다. 전화가 오면 지난 상담 기록을 확인하고, 통화가 끝나면 상담 요점과 다음 연락 일정을 정리할 수 있습니다.</p>
-            <dl>
-              <dt>역할</dt><dd>고객 관리 웹 개발, 앱·웹 문자 연동 및 자동 발송 구현</dd>
-              <dt>기술 스택</dt>
-              <dd class="tech-stack" lang="en">
-                <span><img src="./assets/skills/kotlin.svg" alt="" width="26" height="26">Kotlin</span>
-                <span><img src="./assets/skills/jetpackcompose.svg" alt="" width="26" height="26">Jetpack Compose</span>
-                <span><img src="./assets/skills/react.svg" alt="" width="26" height="26">React</span>
-                <span><img src="./assets/skills/typescript.svg" alt="" width="26" height="26">TypeScript</span>
-                <span><img src="./assets/skills/spring.svg" alt="" width="26" height="26">Spring Boot</span>
-                <span><img src="./assets/skills/postgresql.svg" alt="" width="26" height="26">PostgreSQL</span>
-              </dd>
-            </dl>
-          </div>
-        </div>
-        <details class="project-details">
-          <summary><span class="details-closed">자세히 보기</span><span class="details-open">접기</span></summary>
-          <p>현장에서 남긴 상담 기록을 사무실에서도 이어 볼 수 있도록 앱과 웹을 연결했습니다. 고객별 문자와 발송 규칙을 웹에서 관리하고 후속 상담 일정을 확인할 수 있습니다.</p>
-          <p><a href="https://salesbaro.com/products/">바로영업 제품 소개 보기</a></p>
         </details>
       </article>
     </section>
