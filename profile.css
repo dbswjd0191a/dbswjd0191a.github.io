@@ -144,6 +144,7 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
   font-size: .875rem;
   color: #715932;
   text-align: right;
+  word-break: keep-all;
 }
 .project-overview {
   display: grid;
@@ -167,6 +168,7 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
 .project-info dl { margin: 0; }
 .project-info dt { margin-top: .75rem; font-size: .875rem; font-weight: 650; }
 .project-info dd { margin: .125rem 0 0; color: #515c6c; }
+.tech-stack { display: flex; flex-wrap: wrap; gap: .375rem; }
 .tech-tag {
   display: inline-block;
   padding: .125rem .5rem;

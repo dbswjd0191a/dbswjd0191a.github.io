@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="only light">
   <title>윤정 · 포트폴리오</title>
-  <link rel="stylesheet" href="./profile.css?v=12">
+  <link rel="stylesheet" href="./profile.css?v=13">
 </head>
 <body>
   <main>
@@ -84,27 +84,33 @@
       <h2 id="projects" lang="en">Projects</h2>
       <article class="project-entry">
         <header class="project-heading">
-          <h3><img src="./assets/projects/folder.svg" alt="" width="20" height="20">프로젝트 제목</h3>
-          <!-- 수상한 프로젝트에만 이 요소를 둡니다. -->
-          <span class="project-award">수상명 예시</span>
+          <h3><img src="./assets/projects/folder.svg" alt="" width="20" height="20">AI기반 HTP검사 자동화</h3>
+          <span class="project-award">교내 상담실무경진대회 학술 부문 대상</span>
         </header>
         <div class="project-overview">
           <div class="project-preview">
             <img class="preview-placeholder" src="./assets/contact/image.svg" alt="프로젝트 미리보기 사진 자리" width="24" height="24">
           </div>
           <div class="project-info">
-            <p>프로젝트 한 줄 소개</p>
+            <p>집-나무-사람 검사(HTP)의 그림과 내담자의 응답을 함께 분석해 검사 소견을 생성하는 프로그램을 개발하고 검증했습니다.</p>
             <dl>
               <dt>내 역할</dt>
-              <dd>담당한 작업</dd>
+              <dd>팀장, 검사 프로그램 개발</dd>
               <dt>기술 스택</dt>
-              <dd><span class="tech-tag">사용 기술</span></dd>
+              <dd class="tech-stack" lang="en">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">YOLOv8</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">RAG</span>
+              </dd>
             </dl>
           </div>
         </div>
         <details class="project-details">
           <summary><span class="details-closed">자세히 보기</span><span class="details-open">접기</span></summary>
-          <p>프로젝트의 구현 과정과 결과를 담을 공간입니다.</p>
+          <p>HTP 검사 그림에 맞게 파인튜닝한 YOLOv8으로 그림 속 객체를 인식하고, OpenCV로 객체별 특징을 비교했습니다. 이어 RAG를 활용해 그림에서 추출한 특징과 내담자의 응답을 종합적으로 검토한 뒤 검사 소견을 생성하도록 구현했습니다.</p>
         </details>
       </article>
     </section>
