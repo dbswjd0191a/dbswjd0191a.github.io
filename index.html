@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f4">
+  <meta name="description" content="Build Archive는 개발 프로젝트와 인터랙티브 실험을 기록하는 포트폴리오입니다. 첫 작업 Orbit Study를 살펴보세요.">
+  <title>Build Archive — 개발 포트폴리오</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./orbit.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="masthead wrap">
+    <a class="brand" href="#top" aria-label="Build Archive 처음으로">
+      <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      Build Archive
+    </a>
+    <nav aria-label="주 메뉴">
+      <a href="#work">프로젝트</a>
+      <a href="https://github.com/dbswjd0191a/dbswjd0191a.github.io" lang="en">GitHub</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="intro">
+        <p class="eyebrow"><span aria-hidden="true"></span>개발 포트폴리오</p>
+        <h1 id="hero-title" lang="en">Build<br><em>Archive</em><b>.</b></h1>
+        <p class="lead">직접 만든 프로젝트와 그 안에서 내린<br class="desktop"> 기술적 선택을 기록합니다.</p>
+        <a class="button" href="#work">프로젝트 보기</a>
+      </div>
+      <figure class="cover">
+        <div class="print" id="orbit">
+          <span class="cross tl" aria-hidden="true"></span><span class="cross tr" aria-hidden="true"></span>
+          <span class="cross bl" aria-hidden="true"></span><span class="cross br" aria-hidden="true"></span>
+          <canvas id="sculpture" width="740" height="520" role="img" aria-label="여러 개의 코발트색 고리가 리본처럼 이어져 입체적인 궤도를 이루는 작품"></canvas>
+          <noscript><p class="fallback">Orbit Study의 입체 표지를 보려면 JavaScript를 켜주세요.</p></noscript>
+        </div>
+        <figcaption>
+          <div><span class="caption-label" lang="en">INTERACTIVE COVER</span><strong lang="en">Orbit Study</strong></div>
+          <button type="button" id="rotate" hidden aria-controls="sculpture"><span class="play-icon" aria-hidden="true"></span><span id="rotate-label">회전 재생</span></button>
+        </figcaption>
+      </figure>
+    </section>
+    <section class="work" id="work" aria-labelledby="work-title">
+      <h2 id="work-title">프로젝트<span class="accent">.</span></h2>
+      <article>
+        <div class="project-title">
+          <p class="kind" lang="en">Creative coding</p>
+          <h3 lang="en">Orbit Study</h3>
+          <p class="stack" lang="en">JavaScript <span>·</span> Canvas 2D</p>
+        </div>
+        <div class="project-info">
+          <p>이 포트폴리오의 첫 표지로 만든 그래픽 실험입니다. 고리를 조금씩 기울여 쌓고, 면마다 빛의 밝기를 달리해 한 장의 캔버스에 깊이를 만들었습니다.</p>
+          <details>
+            <summary>제작 노트 <span aria-hidden="true" class="plus"></span></summary>
+            <div class="notes">
+              <h4>형태를 만드는 방법</h4>
+              <p>타원 궤도를 따라 얇은 고리를 배치했습니다. 고리마다 방향을 조금씩 바꾸고, 멀리 있는 선부터 그려 앞뒤가 자연스럽게 겹치도록 했습니다.</p>
+              <h4>움직임을 다루는 방법</h4>
+              <p>표지는 정지된 상태로 시작합니다. 회전 버튼을 누르면 시점이 움직이고, 표지가 화면 밖으로 나가면 그리기를 쉬었다가 돌아왔을 때 이어집니다.</p>
+              <div class="note-links"><a href="#orbit">표지에서 실행</a><a href="https://github.com/dbswjd0191a/dbswjd0191a.github.io/blob/master/orbit.js">구현 코드</a></div>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="wrap">
+    <a class="brand" href="#top"><span class="mark small" aria-hidden="true"><i></i><i></i><i></i></span>Build Archive</a>
+    <a href="#top">맨 위로</a>
+  </footer>
+</body>
+</html>
