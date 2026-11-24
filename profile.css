@@ -22,7 +22,7 @@ h1 {
 }
 .about-details {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(3.5rem, calc(28vw - 2.25rem), 7.5rem);
+  grid-template-columns: clamp(3.5rem, calc(28vw - 2.25rem), 7.5rem) minmax(0, 1fr);
   align-items: start;
   gap: clamp(.5rem, 2vw, 1.5rem);
   margin-top: 1rem;
