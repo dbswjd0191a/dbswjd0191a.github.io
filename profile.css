@@ -125,13 +125,11 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
 
 #projects { border-bottom: 2px solid #596573; }
 .project-entry {
-  padding-top: 1.25rem;
+  padding-block: 1.25rem .875rem;
+  border-bottom: 1px solid #aeb7c0;
   overflow-wrap: anywhere;
 }
-.project-entry + .project-entry {
-  margin-top: 1.5rem;
-  border-top: 1px solid #aeb7c0;
-}
+.project-entry:last-child { border-bottom-color: #e1e5e9; }
 .project-heading {
   display: flex;
   justify-content: space-between;
@@ -176,9 +174,7 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
   background: #edf1f5;
   font-size: .875rem;
 }
-.project-details { border-top: 1px solid #e1e5e9; }
 .project-details summary {
-  padding-top: .875rem;
   color: #364454;
   cursor: pointer;
   font-size: .9375rem;
