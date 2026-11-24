@@ -42,7 +42,6 @@ h1 span {
   display: grid;
   place-items: center;
   aspect-ratio: 3 / 4;
-  border: 1px solid #d9dee3;
   border-radius: 4px;
   background: #f8f9fa;
 }
@@ -172,10 +171,9 @@ h3 { font-size: 1.125rem; line-height: 1.6; letter-spacing: -.035em; word-break:
   place-items: center;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  background: #f8f9fa;
-  border: 1px solid #d9dee3;
   border-radius: .25rem;
 }
+.project-preview:has(> .preview-placeholder) { background: #f8f9fa; }
 .project-preview > img { width: 100%; height: 100%; object-fit: contain; }
 .project-preview > .preview-placeholder { width: 24px; height: 24px; opacity: .35; }
 .project-info { line-height: 1.5; }
